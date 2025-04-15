@@ -11,8 +11,6 @@ public class Main {
         // Log the result using the logger with built-in formatting
         logger.log(Level.INFO, () -> "Result: " + result);
 
-        System.out.println("Result: " + result);
-
 
     }
 }
