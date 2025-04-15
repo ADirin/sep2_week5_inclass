@@ -1,0 +1,6 @@
+projectKey=classTest_2025
+serverUrl=http://localhost:9000
+serverVersion=25.3.0.104237
+dashboardUrl=http://localhost:9000/dashboard?id=classTest_2025
+ceTaskId=0afd8ed2-f472-4d57-8444-979d79d1f39a
+ceTaskUrl=http://localhost:9000/api/ce/task?id=0afd8ed2-f472-4d57-8444-979d79d1f39a
