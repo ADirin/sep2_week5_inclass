@@ -40,12 +40,13 @@ pipeline {
         stage('Docker Build & Push') {
             steps {
                 script {
-                    docker.withRegistry('https://index.docker.io/v1/', "${env.DOCKER_HUB_CREDENTIALS}") {
-                        def app = docker.build("${DOCKER_IMAGE}:latest")
-                        app.push('latest')
+                    docker.build('amirdirin/sonarfiletest:latest')
+                    withDockerRegistry([credentialsId: 'dockerhub-credentials', url: '']) {
+                        docker.image('amirdirin/sonarfiletest:latest').push()
                     }
                 }
             }
         }
+
     }
 }
